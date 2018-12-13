@@ -8,15 +8,24 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
 			body {
-				background-color: rgb(0, 121, 0);
+				background-image: linear-gradient(#2f660d, #60ad25);
+				background-repeat: no-repeat;
+				background-size: cover;
 				color: white;
 			}
 			#right {
 				float: right;
 				border-style: solid;
+				width: 230px;
 			}
 			#left {
 				float: left;
+				border-style: solid;
+				width: 230px;
+			}
+			#center {
+				position: absolute;
+				left: 30%;
 				border-style: solid;
 			}
 			#nav #Title {
@@ -47,20 +56,26 @@
 			#nav li a:hover {
 			  background-color: #111;
 			}
+			#slider {
+				border-style: dashed;
+			}
+			#padding {
+				padding: 2px;
+			}
 		</style>
 	</head>
 	<body>
 		<div id = "nav">
-			<img id = "Title" src = "Title.jpg">
+			<a href = "Home.html"><img id = "Title" src = "Title.jpg"></a>
 			<ul>
 			  <li><a href="#news">News</a></li>
 			  <li><a href="#contact">Advice</a></li>
 			  <li><a href="#about">People</a></li>
 			</ul>
 		</div>
-		<p align="center"> <canvas id="mycanvas"></canvas></p>
+		<!--<p align="center"> <canvas id="mycanvas"></canvas></p>-->
 		<!--<div id = "x" style = "width: 100%; height : 100%;"></div>-->
-		 <div>
+		 <div id = "slider">
 			<div class="w3-content w3-section" style="max-width:100%;">
 				<a href="#"><img class="mySlides" src="Global.jpg" style="width:100%; height: 500px;"></a>
 				<a href="#"><img class="mySlides" src="Global.gif" style="width:100%; height: 500px;"></a>
@@ -69,10 +84,33 @@
 		</div>
 		  
 		<div id = "right">
-			<h4>What is Climate Change?</h4>
+			<div id = "padding">
+				<h4>What is it Doing?</h4>
+				<p>Sea levels are rising and oceans are becoming warmer. Longer, more intense droughts threaten crops, wildlife and freshwater supplies. From polar bears in the Arctic to marine turtles off the coast of Africa, our planet’s diversity of life is at risk from the changing climate.</p>
+				<p>Glaciers have shrunk, ice on rivers and lakes is breaking up earlier, plant and animal ranges have shifted and trees are flowering sooner</p>
+				<h4>Future Effects</h4>
+				<ul>
+					<li>Change will continue through this century and beyond</li>
+					<li>Temperatures will continue to rise</li>
+					<li>Frost-free season (and growing season) will lengthen</li>
+					<li>Changes in precipitation patterns</li>
+					<li>More droughts and heat waves</li>
+					<li>Hurricanes will become stronger and more intense</li>
+					<li>Sea level will rise 1-4 feet by 2100</li>
+					<li>Arctic likely to become ice-free</li>
+				</ul>
+			</div>
+		</div>
+		<div id = "center">
+			<h3>----------------- Statistics -----------------</h3>
 		</div>
 		<div id = "left">
-			<h4>What is Climate Change?</h4>
+			<div id = "padding">
+				<h4>What is Climate Change?</h4>
+				<p>A change in global or regional climate patterns, in particular a change apparent from the mid to late 20th century onwards and attributed largely to the increased levels of atmospheric carbon dioxide produced by the use of fossil fuels.</p>
+				<p><br>That's the basic definition. But what <i>is</i> it and why should we fear it?</p>
+				<p><br>The planet's climate has constantly been changing over geological time. The global average temperature today is about 15C, though geological evidence suggests it has been much higher and lower in the past.<br>However, the current period of warming is occurring more rapidly than many past events. Scientists are concerned that the natural fluctuation, or variability, is being overtaken by a rapid human-induced warming that has serious implications for the stability of the planet's climate.</p>
+			</div>
 		</div>
 	</body>
 <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
@@ -92,7 +130,7 @@
                 myIndex = 1
             }
             x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 4000); // Change image every 2 seconds
+            setTimeout(carousel, 4500); // Change image every 2 seconds
         }
 	
 	/*var sketchProc = function(processingInstance) {
