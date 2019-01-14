@@ -7,11 +7,23 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
+			html {
+				height: 195%;
+				margin: 0px;
+				padding: 0px;
+			}
 			body {
-				background-image: linear-gradient(#024001, #60ad25);
+				background-image: linear-gradient(#5b526e, #a091c4);
 				background-repeat: no-repeat;
 				background-size: cover;
 				color: white;
+				height: 100%;
+				margin: 0px;
+				padding: 0px;
+			}
+			#wrapper{
+				min-height: 100%;
+				position: relative;
 			}
 			#right {
 				float: right;
@@ -96,7 +108,7 @@
 				bottom: 0;
 				width: 100%;
 				height: 50px;
-				background-color: #024001;
+				background-color: #5b526e;
 				color: white;
 				text-align: center;
 				font-size: 10px;
@@ -129,64 +141,82 @@
 				font-size: 12px;
 				
 			}
+			.footer {
+				height: 87px;
+				width: 100%;
+				background-color: #71678c;
+				color: white;
+				text-align: center;
+				position: absolute;
+				font-size: 7px;
+				left: 0px;
+				bottom: 0px;
+			}
 		</style>
 	</head>
 	<body>
-		<div id = "nav">
-			<a href = "Home.html"><img id = "Title" src = "Title.jpg"></a>
-			<ul>
-			  <li><a href="News.html">News</a></li>
-			  <li><a href="Advice.html">Advice</a></li>
-			  <li><a href="People.html">People</a></li>
-			</ul>
-		</div>
-		<!--<p align="center"> <canvas id="mycanvas"></canvas></p>-->
-		<!--<div id = "x" style = "width: 100%; height : 100%;"></div>-->
-		 <div id = "slider">
-			<div class="w3-content w3-section" style="max-width:100%;">
-				<a href="#"><img class="mySlides" src="Global.jpg" style="width:100%; height: 500px;"></a>
-				<a href="#"><img class="mySlides" src="Global.gif" style="width:100%; height: 500px;"></a>
-				<a href="#"><img class="mySlides" src="Warming.jpg" style="width:100%; height: 500px;"></a>
-			</div>
-		</div>
-		  
-		<div id = "right">
-			<div id = "padding">
-				<h4>What is it Doing?</h4>
-				<p>Sea levels are rising and oceans are becoming warmer. Longer, more intense droughts threaten crops, wildlife and freshwater supplies. From polar bears in the Arctic to marine turtles off the coast of Africa, our planet’s diversity of life is at risk from the changing climate.</p>
-				<p>Glaciers have shrunk, ice on rivers and lakes is breaking up earlier, plant and animal ranges have shifted and trees are flowering sooner</p>
-				<h4>Future Effects</h4>
+		<div id = "wrapper">
+			<div id = "nav">
+				<a href = "Home.html"><img id = "Title" src = "Title.jpg"></a>
 				<ul>
-					<li>Change will continue through this century and beyond</li>
-					<li>Temperatures will continue to rise</li>
-					<li>Frost-free season (and growing season) will lengthen</li>
-					<li>Changes in precipitation patterns</li>
-					<li>More droughts and heat waves</li>
-					<li>Hurricanes will become stronger and more intense</li>
-					<li>Sea level will rise 1-4 feet by 2100</li>
-					<li>Arctic likely to become ice-free</li>
+				  <li><a href="News.html">News</a></li>
+				  <li><a href="Advice.html">Advice</a></li>
+				  <li><a href="People.html">People</a></li>
 				</ul>
 			</div>
-		</div>
-		<img class = "effects" src = "Arnold.jpg">
-		<h6 class = "names">Arnold Schwarzenegger</h6>
-		<img class = "effects2" src = "Leo.jpg">
-		<h6 class = "names2">Leonardo DiCaprio</h6>
-		<img class = "effects3" src = "Ben.jpg">
-		<h6 class = "names3">Ben Affleck</h6>
-		<img class = "effects4" src = "Mark.jpg">
-		<h6 class = "names4">Mark Ruffalo</h6>
-		<div id = "left">
-			<div id = "padding">
-				<h4>What is Climate Change?</h4>
-				<p>A change in global or regional climate patterns, in particular a change apparent from the mid to late 20th century onwards and attributed largely to the increased levels of atmospheric carbon dioxide produced by the use of fossil fuels.</p>
-				<p><br>That's the basic definition. But what <i>is</i> it and why should we fear it?</p>
-				<p><br>The planet's climate has constantly been changing over geological time. The global average temperature today is about 15C, though geological evidence suggests it has been much higher and lower in the past.<br>However, the current period of warming is occurring more rapidly than many past events. Scientists are concerned that the natural fluctuation, or variability, is being overtaken by a rapid human-induced warming that has serious implications for the stability of the planet's climate.<br><br><br><br></p>
+			<!--<p align="center"> <canvas id="mycanvas"></canvas></p>-->
+			<!--<div id = "x" style = "width: 100%; height : 100%;"></div>-->
+			 <div id = "slider">
+				<div class="w3-content w3-section" style="max-width:100%;">
+					<a href="#"><img class="mySlides" src="Global.jpg" style="width:100%; height: 500px;"></a>
+					<a href="#"><img class="mySlides" src="Global.gif" style="width:100%; height: 500px;"></a>
+					<a href="#"><img class="mySlides" src="Warming.jpg" style="width:100%; height: 500px;"></a>
+				</div>
 			</div>
-		</div>
-		<div class="footer">
-			<p>Posted by: Pádraig Whyte and James Joyce</p>
-			<p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+			  
+			<div id = "right">
+				<div id = "padding">
+					<h4>Arnold Schwarzenegger</h4>
+					<p>Sea levels are rising and oceans are becoming warmer. Longer, more intense droughts threaten crops, wildlife and freshwater supplies. From polar bears in the Arctic to marine turtles off the coast of Africa, our planet’s diversity of life is at risk from the changing climate.</p>
+					<p>Glaciers have shrunk, ice on rivers and lakes is breaking up earlier, plant and animal ranges have shifted and trees are flowering sooner</p>
+					<h4>Future Effects</h4>
+					<ul>
+						<li>Change will continue through this century and beyond</li>
+						<li>Temperatures will continue to rise</li>
+						<li>Frost-free season (and growing season) will lengthen</li>
+						<li>Changes in precipitation patterns</li>
+						<li>More droughts and heat waves</li>
+						<li>Hurricanes will become stronger and more intense</li>
+						<li>Sea level will rise 1-4 feet by 2100</li>
+						<li>Arctic likely to become ice-free</li>
+					</ul>
+				</div>
+			</div>
+			<img class = "effects" src = "Arnold.jpg">
+			<h6 class = "names">Arnold Schwarzenegger</h6>
+			<img class = "effects2" src = "Leo.jpg">
+			<h6 class = "names2">Leonardo DiCaprio</h6>
+			<img class = "effects3" src = "Ben.jpg">
+			<h6 class = "names3">Ben Affleck</h6>
+			<img class = "effects4" src = "Mark.jpg">
+			<h6 class = "names4">Mark Ruffalo</h6>
+			<div id = "left">
+				<div id = "padding">
+					<h4>Leonardo DiCaprio</h4>
+					<p>A change in global or regional climate patterns, in particular a change apparent from the mid to late 20th century onwards and attributed largely to the increased levels of atmospheric carbon dioxide produced by the use of fossil fuels.</p>
+					<p><br>That's the basic definition. But what <i>is</i> it and why should we fear it?</p>
+					<p><br>The planet's climate has constantly been changing over geological time. The global average temperature today is about 15C, though geological evidence suggests it has been much higher and lower in the past.<br>However, the current period of warming is occurring more rapidly than many past events. Scientists are concerned that the natural fluctuation, or variability, is being overtaken by a rapid human-induced warming that has serious implications for the stability of the planet's climate.<br><br><br><br></p>
+				</div>
+			</div>
+			<div class="footer">
+				<p>Posted by: Pádraig Whyte and James Joyce</p>
+				<p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+				<details>
+					<summary>Copyright of the students of St.Josephs Secondary School, Rush, Co.Dublin</summary>
+					<p> - by WJ's GreenWorld. All Rights Reserved.</p>
+					<p>All content and graphics on this web site are the property of the company WJ's GreenWorld.</p>
+				</details>
+			</div>
 		</div>
 	</body>
 <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 

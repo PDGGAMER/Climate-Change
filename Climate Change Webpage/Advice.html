@@ -7,11 +7,23 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
+			html {
+				height: 225%;
+				margin: 0px;
+				padding: 0px;
+			}
 			body {
-				background-image: linear-gradient(#024001, #60ad25);
+				background-image: linear-gradient(#1e6175, #31c4db);
 				background-repeat: no-repeat;
 				background-size: cover;
 				color: white;
+				height: 100%;
+				margin: 0px;
+				padding: 0px;
+			}
+			#wrapper{
+				min-height: 100%;
+				position: relative;
 			}
 			#right {
 				float: right;
@@ -91,59 +103,67 @@
 				border-style: groove;
 			}
 			.footer {
-				position: fixed;
-				left: 0;
-				bottom: 0;
+				height: 87px;
 				width: 100%;
-				height: 50px;
-				background-color: #024001;
+				background-color: #1e6175;
 				color: white;
 				text-align: center;
-				font-size: 10px;
+				position: absolute;
+				font-size: 7px;
+				left: 0px;
+				bottom: 0px;
 			}
 		</style>
 	</head>
 	<body>
-		<div id = "nav">
-			<a href = "Home.html"><img id = "Title" src = "Title.jpg"></a>
-			<ul>
-			  <li><a href="News.html">News</a></li>
-			  <li><a href="Advice.html">Advice</a></li>
-			  <li><a href="People.html">People</a></li>
-			</ul>
-		</div>
-		<!--<p align="center"> <canvas id="mycanvas"></canvas></p>-->
-		<!--<div id = "x" style = "width: 100%; height : 100%;"></div>-->
-		 <div id = "slider">
-			<div class="w3-content w3-section" style="max-width:100%;">
-				<a href="#"><img class="mySlides" src="Global.jpg" style="width:100%; height: 500px;"></a>
-				<a href="#"><img class="mySlides" src="Global.gif" style="width:100%; height: 500px;"></a>
-				<a href="#"><img class="mySlides" src="Warming.jpg" style="width:100%; height: 500px;"></a>
+		<div id = "wrapper">
+			<div id = "nav">
+				<a href = "Home.html"><img id = "Title" src = "Title.jpg"></a>
+				<ul>
+				  <li><a href="News.html">News</a></li>
+				  <li><a href="Advice.html">Advice</a></li>
+				  <li><a href="People.html">People</a></li>
+				</ul>
 			</div>
-		</div>
-		  
-		<div id = "right">
-			<div id = "padding">
-				<h4>What Can I Do?</h4>
-				<p>Nobody can change the world alone. However, your action could make others act upon themselves. You can't just put up posters any more. Nobody looks at those.</p>
-				<p>One way you can contribute is a simple way, yet so many people do not do it: Do not throw your rubbish on the ground. Put it in a bin. If a bin is full, put it in another bin. If no other bins are available, take it home and put it in your own bin. Simple as that.</p>
-				<p>Second way: Pick up after your dog. Carry around small plastic bags. If your dog does a dump, turn the bag inside out, put your hand inside, pick up the poo and pull the bag over your hand. Your hand doesn't get messy and all that's left is to PUT IT IN THE BIN.</p>
-				<p>Third way: Point out others' actions. Not random people because they will probably think you've been smoking something. Tell your friends if they litter to pick it up and put it in a bin. If they refuse, <i>you</i> do it. <strike>Also, cut that friend out of your life forever.</strike></p>
-				<p>Fourth way: Spend less time in the shower. The water is heated up by a boiler, the boiler uses electricity and if your using steam power, that's a big no no. Set a time limit, like maybe an alarm(Make sure you don't get surprised too much or you could slip and bang your head).</p>
+			<!--<p align="center"> <canvas id="mycanvas"></canvas></p>-->
+			<!--<div id = "x" style = "width: 100%; height : 100%;"></div>-->
+			 <div id = "slider">
+				<div class="w3-content w3-section" style="max-width:100%;">
+					<a href="#"><img class="mySlides" src="Global.jpg" style="width:100%; height: 500px;"></a>
+					<a href="#"><img class="mySlides" src="Global.gif" style="width:100%; height: 500px;"></a>
+					<a href="#"><img class="mySlides" src="Warming.jpg" style="width:100%; height: 500px;"></a>
+				</div>
 			</div>
-		</div>
-		<img class = "effects" src = "stony.jpg">
-		<div id = "left">
-			<div id = "padding">
-				<h4>What Can Your Community Do?</h4>
-				<p>A change in global or regional climate patterns, in particular a change apparent from the mid to late 20th century onwards and attributed largely to the increased levels of atmospheric carbon dioxide produced by the use of fossil fuels.</p>
-				<p><br>That's the basic definition. But what <i>is</i> it and why should we fear it?</p>
-				<p><br>The planet's climate has constantly been changing over geological time. The global average temperature today is about 15C, though geological evidence suggests it has been much higher and lower in the past.<br>However, the current period of warming is occurring more rapidly than many past events. Scientists are concerned that the natural fluctuation, or variability, is being overtaken by a rapid human-induced warming that has serious implications for the stability of the planet's climate.<br><br><br><br></p>
+			  
+			<div id = "right">
+				<div id = "padding">
+					<h4>What Can I Do?</h4>
+					<p>Nobody can change the world alone. However, your action could make others act upon themselves. You can't just put up posters any more. Nobody looks at those.</p>
+					<p>One way you can contribute is a simple way, yet so many people do not do it: Do not throw your rubbish on the ground. Put it in a bin. If a bin is full, put it in another bin. If no other bins are available, take it home and put it in your own bin. Simple as that.</p>
+					<p>Second way: Pick up after your dog. Carry around small plastic bags. If your dog does a dump, turn the bag inside out, put your hand inside, pick up the poo and pull the bag over your hand. Your hand doesn't get messy and all that's left is to PUT IT IN THE BIN.</p>
+					<p>Third way: Point out others' actions. Not random people because they will probably think you've been smoking something. Tell your friends if they litter to pick it up and put it in a bin. If they refuse, <i>you</i> do it. <strike>Also, cut that friend out of your life forever.</strike></p>
+					<p>Fourth way: Spend less time in the shower. The water is heated up by a boiler, the boiler uses electricity and if your using steam power, that's a big no no. Set a time limit, like maybe an alarm(Make sure you don't get surprised too much or you could slip and bang your head).</p>
+					<p>Fifth way: </p>
+				</div>
 			</div>
-		</div>
-		<div class="footer">
-			<p>Posted by: Pádraig Whyte and James Joyce</p>
-			<p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+			<img class = "effects" src = "stony.jpg">
+			<div id = "left">
+				<div id = "padding">
+					<h4>What Can Your Community Do?</h4>
+					<p>A change in global or regional climate patterns, in particular a change apparent from the mid to late 20th century onwards and attributed largely to the increased levels of atmospheric carbon dioxide produced by the use of fossil fuels.</p>
+					<p><br>That's the basic definition. But what <i>is</i> it and why should we fear it?</p>
+					<p><br>The planet's climate has constantly been changing over geological time. The global average temperature today is about 15C, though geological evidence suggests it has been much higher and lower in the past.<br>However, the current period of warming is occurring more rapidly than many past events. Scientists are concerned that the natural fluctuation, or variability, is being overtaken by a rapid human-induced warming that has serious implications for the stability of the planet's climate.<br><br><br><br></p>
+				</div>
+			</div>
+			<div class="footer">
+				<p>Posted by: Pádraig Whyte and James Joyce</p>
+				<p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+				<details>
+					<summary>Copyright of the students of St.Josephs Secondary School, Rush, Co.Dublin</summary>
+					<p> - by WJ's GreenWorld. All Rights Reserved.</p>
+					<p>All content and graphics on this web site are the property of the company WJ's GreenWorld.</p>
+				</details>
+			</div>
 		</div>
 	</body>
 <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
