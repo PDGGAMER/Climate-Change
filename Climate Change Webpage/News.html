@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
 			html {
-				height: 195%;
+				height: 330%;
 				margin: 0px;
 				padding: 0px;
 			}
@@ -33,7 +33,7 @@
 			}
 			#left {
 				float: left;
-				border-style: solid;
+				
 				width: 230px;
 				margin-bottom: 50px;
 			}
@@ -49,11 +49,9 @@
 			  overflow: hidden;
 			  background-color: #333;
 			}
-
 			#nav li {
 			  float: left;
 			}
-
 			#nav li a {
 			  display: block;
 			  color: white;
@@ -61,7 +59,6 @@
 			  padding: 14px 16px;
 			  text-decoration: none;
 			}
-
 			#nav li a:hover {
 			  background-color: #111;
 			}
@@ -75,7 +72,7 @@
 				position: absolute;
 				left: 33%;
 				width: 34%;
-				height: 200px;
+				height: auto;
 				border-style: groove;
 				transition: all .2s ease-in-out;
 			}
@@ -84,10 +81,10 @@
 			}
 			.effects2 {
 				position: absolute;
-				top: 800px;
+				top: 900px;
 				left: 33%;
 				width: 34%;
-				height: 200px;
+				height: auto;
 				border-style: groove;
 				transition: all .2s ease-in-out;
 			}
@@ -96,10 +93,10 @@
 			}
 			.effects3 {
 				position: absolute;
-				top: 1020px;
+				top: 1320px;
 				left: 33%;
 				width: 34%;
-				height: 200px;
+				height: auto;
 				border-style: groove;
 				transition: all .2s ease-in-out;
 			}
@@ -108,10 +105,10 @@
 			}
 			.effects4 {
 				position: absolute;
-				top: 1240px;
+				top: 1740px;
 				left: 33%;
 				width: 34%;
-				height: 200px;
+				height: auto;
 				border-style: groove;
 				transition: all .2s ease-in-out;
 			}
@@ -129,6 +126,29 @@
 				left: 0px;
 				bottom: 0px;
 			}
+			
+			#center-bottom {
+				top:1400px;
+				position:absolute;
+				left: 25%;
+			}
+			
+			.news-left {
+				
+				position:absolute;
+				width:27%;
+				height:auto;
+				
+			}
+			
+			.news-left2 {
+				top:1200;
+				position:absolute;
+				width:27%;
+				height:auto;
+				
+			}
+			
 		</style>
 	</head>
 	<body>
@@ -169,17 +189,19 @@
 					</ul>
 				</div>
 			</div>
-			<img class = "effects" src = "stony.jpg">
-			<img class = "effects2" src = "cc flooded houses.jpg">
-			<img class = "effects3" src = "cc cows.jpg">
-			<img class = "effects4" src = "cc polar bear.jpg">
+			<img class = "effects" src = "trump.png">
+			<img class = "effects2" src = "headline.jpg">
+			
 			<div id = "left">
 				<div id = "padding">
-					<h4>What is Climate Change?</h4>
-					<p>A change in global or regional climate patterns, in particular a change apparent from the mid to late 20th century onwards and attributed largely to the increased levels of atmospheric carbon dioxide produced by the use of fossil fuels.</p>
-					<p><br>That's the basic definition. But what <i>is</i> it and why should we fear it?</p>
-					<p><br>The planet's climate has constantly been changing over geological time. The global average temperature today is about 15C, though geological evidence suggests it has been much higher and lower in the past.<br>However, the current period of warming is occurring more rapidly than many past events. Scientists are concerned that the natural fluctuation, or variability, is being overtaken by a rapid human-induced warming that has serious implications for the stability of the planet's climate.<br><br><br><br><br></p>
+					<h4>Headlines</h4>
+					<img class="news-left" src = "viewpoints.jpg">
+					<img class="news-left2" src = "tippoint.jpg">
 				</div>
+			</div>
+			
+			<div id="center-bottom">
+			<iframe width="710" height="1300" frameborder="0" marginwidth="0" marginheight="0" scrolling ="no" src="https://calculator.carbonfootprint.com/calculator.aspx"></iframe>
 			</div>
 			
 			<div class="footer">
@@ -234,7 +256,6 @@
 	  // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
 		
 	var processingInstance = new Processing(canvas, sketchProc); */
-
  </script>
 
 
